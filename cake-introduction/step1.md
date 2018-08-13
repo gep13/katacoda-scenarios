@@ -2,17 +2,19 @@ In order to get started with Cake, you are going to need a build script.  This i
 
 ## Task
 
-Create default build.cake file
+Let's create a typical build.cake file.  Copy the below into the `build.cake` file, and click the `cake` button.
 
 <pre class="file" data-filename="build.cake" data-target="replace">var target = Argument("target", "Hello");
 
 Task("Hello")
-.Does(()=>
-{
-
-});
+    .Does(()=>
+    {
+        Information("Hello World!");
+    });
 
 RunTarget(target);
 </pre>
 
 `cake`{{execute}}
+
+## What is this doing?
