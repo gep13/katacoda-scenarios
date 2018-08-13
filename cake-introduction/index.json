@@ -2,7 +2,7 @@
   "title": "Cake Introduction",
   "description": "Getting started with Cake and executing tasks.",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "5-10 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Create Build Script",
