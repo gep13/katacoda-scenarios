@@ -5,7 +5,7 @@
   "time": "2 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Execute build script",
+      "title": "Step 1 - Create Build Script",
       "text": "step1.md",
       "code": "code.sh"
     },
