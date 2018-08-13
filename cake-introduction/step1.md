@@ -4,7 +4,7 @@ In order to get started with Cake, you are going to need a build script.  This i
 
 Create default build.cake file
 
-<pre class="file" data-filename="app.js" data-target="replace">var target = Argument("target", "Hello");
+<pre class="file" data-filename="build.cake" data-target="replace">var target = Argument("target", "Hello");
 
 Task("Hello")
 .Does(()=>
