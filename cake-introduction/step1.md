@@ -4,9 +4,9 @@ In order to get started with Cake, you are going to need a build script.  This i
 
 Let's create a typical build.cake file.  Copy the below into the `build.cake` file, and click the `cake` button.
 
-<pre class="file" data-filename="build.cake" data-target="replace">var target = Argument("target", "Hello");
+<pre class="file" data-filename="build.cake" data-target="replace">var target = Argument("target", "FirstTask");
 
-Task("Hello")
+Task("FirstTask")
     .Does(()=>
     {
         Information("Hello World!");
@@ -21,7 +21,7 @@ RunTarget(target);
 
 On the first line we are using a built in `alias` to grab a command line argument passed into Cake.  When there is no argument passed, a default value of `Hello` is used.
 
-We then define a `Task` to actually do some work.  This task is named `Hello` and simply uses the `Information` alias to write out "Hello from Cake" to the command line.
+We then define a `Task` to actually do some work.  This task is named `FirstTask` and simply uses the `Information` alias to write out "Hello from Cake" to the command line.
 
 The `RunTarget method is then called to execute the defined target, which by default, will be the Hello task.
 
