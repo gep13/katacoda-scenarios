@@ -18,3 +18,11 @@ RunTarget(target);
 `cake`{{execute}}
 
 ## What is this doing?
+
+On the first line we are using a built in `alias` to grab a command line argument passed into Cake.  When there is no argument passed, a default value of `Hello` is used.
+
+We then define a `Task` to actually do some work.  This task is named `Hello` and simply uses the `Information` alias to write out "Hello from Cake" to the command line.
+
+The `RunTarget method is then called to execute the defined target, which by default, will be the Hello task.
+
+The output from Cake will then show which Tasks were executed, how long they took, and whether the build was successful or not.
