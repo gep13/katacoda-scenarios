@@ -1,19 +1,28 @@
-This is your first step.
-
 ## Task
 
-Add Cake tasks
+Let's create a typical build.cake file.  Copy the below into the `build.cake` file, and click the `cake` button.
 
-```csharp
-var target = Argument("target", "Hello");
+<pre class="file" data-filename="build.cake" data-target="replace">var target = Argument("target", "FirstTask");
 
-Task("Hello")
-  .Does(()=>
-{
-    
-});
+Task("FirstTask")
+    .Does(()=>
+    {
+        Information("Hello World from FirstTask!");
+    });
+
+Task("SecondTask")
+    .Does(()=>
+    {
+        Information("Hello World from SecondTask!");
+    });
 
 RunTarget(target);
-```
+</pre>
 
-`cake`{{execute}}
+Let's execute the FirstTask:
+
+`cake --target=FirstTask`{{execute}}
+
+And then let's execute the SecondTask:
+
+`cake --target=SecondTask`{{execute}}
